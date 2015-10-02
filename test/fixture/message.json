@@ -1,0 +1,9 @@
+{
+    "Records": [
+        {
+            "Sns": {
+                "Message": "{\"AlarmName\":\"BillingAlarm\",\"AlarmDescription\":null,\"AWSAccountId\":\"12345\",\"NewStateValue\":\"ALARM\",\"NewStateReason\":\"Threshold Crossed: 1 datapoint (0.1) was greater than the threshold (0.0).\",\"StateChangeTime\":\"2015-10-02T10:56:36.729+0000\",\"Region\":\"US - N. Virginia\",\"OldStateValue\":\"OK\"}"
+            }
+        }
+    ]
+}

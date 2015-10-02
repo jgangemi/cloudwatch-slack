@@ -1,0 +1,6 @@
+{
+  "hostname": "hooks.slack.com",
+  "path": "/services/### YOUR TOKEN ###",
+  "name": "CloudWatch",
+  "emoji": ":cloudwatch:"
+}

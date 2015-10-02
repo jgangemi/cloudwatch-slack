@@ -1,0 +1,26 @@
+{
+  "name": "cloudwatch-slack",
+  "description": "AWS Lambda to post AWS CloudWatch notifications to Slack",
+  "version": "1.0.0",
+  "author": "Danilo Bürger <danilo@feastr.de> (http://feastr.de/)",
+  "homepage": "https://github.com/feastr/cloudwatch-slack#readme",
+  "repository": "feastr/cloudwatch-slack",
+  "license": "MIT",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/feastr/cloudwatch-slack/issues"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run unit && npm run cover",
+    "lint": "eslint index.js lib test",
+    "unit": "mocha --recursive test",
+    "cover": "istanbul cover --include-all-sources _mocha -- --recursive test"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "eslint": "^1.5.1",
+    "istanbul": "^0.3.21",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.1"
+  }
+}

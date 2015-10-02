@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '4.1'
+- '4.0'
+before_script:
+- cp config.json.example config.json
+after_script:
+- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+notifications:
+  slack:
+    secure: zfw7jBJkaTABQQVLzPR8Bt45cNshk1d3ZOATjlWmHWTvJhkrVsbEl0daye/g3JY9UVdbcDFGJskLQO8GQovYF9Mx/eVWsP6Jg3dIDwEn0p5Vt4Kz0YrvlQjYR4A2k5I/jw8Vok/aoi6d9YIzrm5DjKEJ+HyKoRMCvUM6rlp8H6jslPERdCmFV33Bl/ELDLm2oGyIq8VXTN/KgskYwYeJBhEPH2Bq4eF2MZmC14DMrlqu//scoD+b4DReXyHxoTYoIEW3ogJWXB3vbtMR/wuaUnOACe13XdZR0dqhJHTNSYpEOtaxkHdBg+K0E0ah3j26LBUdCyFqVw4VTTTngUyMmvcx518jY5VSpP/WKVx7QOc2Lxbvn4UQseUKBUlGIYF65pr221QYyKeiuWakO2VaIu0784Rzy+JJ8vPvStantwe3vUWwbVE3FKZURIOzb2US1WlFwR18SGOMj/7zjHyhIgx6UYv9a9SDGrNboRFly5oKrIj/DV59t6W1+XO9cui4nii14JfVLsKWe575X4Y++R1f6cT0fAfwgMoROWM1Nt/GVC23EM/xy4q2BXUpb+EMWs8iqPFwYimlGOEkDVvkHXBffIZgvCpjLQCz1VVYhxyjapWBSPiL0BhGXrcaqlUExdw132o3wcS8gQTmcX1ZVKM0+m8es5jt72I7lpH8ctY=
